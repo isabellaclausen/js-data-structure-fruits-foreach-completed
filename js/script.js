@@ -1,17 +1,46 @@
 "use strict";
 
-let tableTwoFavorFruitList = ["Mango", "Dragonfruit", "Strawberry", "Blueberry"];
 
+// Opgave 3
+let fruitListContent = document.querySelector(".fruitList");
 
-tableTwoFavorFruitList.forEach( fruit => {
-    // console.log(`${fruit}`);
-    let content = "";
-    content += `
-            <li>${fruit}</li>
+// Eksempel array
+let fruits = ["Apple", "Banana", "Orange", "Mango", "Dragonfruit", "Strawberry", "Blueberry"];
 
-    `;
-    document.querySelector(".fruitList").innerHTML += content;
+// Opgave 4
+let content = "";
+
+// forEach loop
+fruits.forEach(function (fruit) {
+  content += `<li>${fruit}</li>`;
 });
+
+// indsæt i HTML
+fruitListContent.innerHTML = content;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
